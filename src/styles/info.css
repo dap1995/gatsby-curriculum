@@ -1,12 +1,20 @@
-.info-container {
+ul.info-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
+}
+
+.info-container li {
+  max-width: 200px;
+  min-width: 200px;
+  max-height: 200px;
+  max-height: 200px;
 }
 
 .info {
   margin: 10px;
   padding: 10px;
-  max-width: 300px;
+
 }

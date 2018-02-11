@@ -14,13 +14,13 @@
   max-height: 100px;
   float: left;
   border-radius: 50px;
-  transition: all linear 1s;
+  transition: all linear 0.5s;
   border: 2px solid #555;
   box-shadow: 5px 5px #fff;
 }
 .header img.profile:hover {
   transform: rotateY(180deg);
-  transition: all linear 1s;
+  transition: all linear 0.5s;
 }
 .header .title h1 {
   flex: 1;

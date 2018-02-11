@@ -25,7 +25,7 @@ const IndexPage = () => (
     <h1>About me</h1>
     <ul className="info-container">
     { informations && informations.map(info => 
-      <li><Info key={`info-${info.id}`} {...info} /></li>
+      <li><Info  className="info" key={`info-${info.id}`} {...info} /></li>
     )}
     </ul>
     </div>
