@@ -1,0 +1,31 @@
+.header {
+  flex: 1;
+  overflow: auto;
+}
+.header .title {
+  flex: 1;
+  margin-top: 20px;
+  margin-left: 120px;
+  flex-direction: row;
+}
+.header img.profile {
+  flex: 1;
+  max-width: 100px;
+  max-height: 100px;
+  float: left;
+  border-radius: 50px;
+  transition: all linear 1s;
+  border: 2px solid #555;
+  box-shadow: 5px 5px #fff;
+}
+.header img.profile:hover {
+  transform: rotateY(180deg);
+  transition: all linear 1s;
+}
+.header .title h1 {
+  flex: 1;
+}
+.header .title h4 {
+  flex: 1;
+  color: #fff;
+}

@@ -1,0 +1,93 @@
+div.skills {
+  flex: 1;
+  flex-direction: row;
+  display: flex;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+
+div.skills div.skill {
+  display: flex;
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  flex: 1;
+  margin: 10px;
+  transform-style: preserve-3d;
+  position: relative;
+  perspective: 800px;
+}
+/**
+CARD - Section
+**/
+.card{
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.face {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.face.front{
+  text-align: center;
+  background:#fff;
+  transform: rotateY(0deg);
+  position: absolute;
+}
+.face.back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: rgb(90, 88, 90);
+  transform: rotateY(180deg);
+}
+.card{
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+.card:hover .front{
+  transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+ transform: rotateY(0deg);
+}
+/**
+  CARD - Ending
+**/
+div.skills div.skill h3 {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+div.skills div.skill p {
+  margin: 0;
+}
+
+div.skills div.skill ul {
+  margin: 0;
+  padding: 5px;
+  list-style: none;
+  flex: 1;
+  flex-direction: row;
+}
+
+div.skills div.skill ul li {
+  margin: 0;
+}
+
+div.skills div.skill ul li a {
+  text-decoration: none;
+}
