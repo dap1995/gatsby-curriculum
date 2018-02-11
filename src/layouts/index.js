@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import './index.css'
 import '../styles/header.css'
 import '../styles/skill.css'
+import '../styles/info.css'
 import '../vendor/fontawesome/css/fontawesome-all.min.css';
 
 
