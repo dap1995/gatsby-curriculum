@@ -14,9 +14,8 @@ div.skills div.skill {
   min-height: 200px;
   flex: 1;
   margin: 10px;
-  transform-style: preserve-3d;
   position: relative;
-  perspective: 800px;
+  perspective: 1000px;
 }
 /**
 CARD - Section
@@ -25,7 +24,7 @@ CARD - Section
   flex: 1;
   width: 100%;
   height: 100%;
-  position: relative;
+  transform-style: preserve-3d;
 }
 .face {
   width: 100%;
@@ -33,39 +32,43 @@ CARD - Section
   backface-visibility: hidden;
   border: 2px solid #ddd;
   border-radius: 10px;
-  transition: 0.5s;
+  transition: transform .3s cubic-bezier(0.4, 0.2, 0.2, 1);
+  position: absolute;
+  transform-style: preserve-3d;
 }
 .face.front{
   text-align: center;
-  background:#fff;
+  background: #fff;
   transform: rotateY(0deg);
-  position: absolute;
 }
 .face.back {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 10px;
-  color: white;
-  text-align: center;
-  background-color: rgb(90, 88, 90);
   transform: rotateY(180deg);
-}
-.card{
-  transform-style: preserve-3d;
-  transition: all 1.0s linear;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  background-color: #ddd;
 }
 .card:hover .front{
   transform: rotateY(-180deg);
 }
 
 .card:hover .back {
- transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 /**
   CARD - Ending
 **/
+
+/* 3D effect */
+.inner {
+  transform: translateZ(60px);
+}
+
+
+/* end */
 div.skills div.skill h3 {
   margin: 0;
   padding-top: 20px;
