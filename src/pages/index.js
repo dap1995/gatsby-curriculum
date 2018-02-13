@@ -17,7 +17,6 @@ const informations = [
   {id: 1, icon:"fas fa-user fa-2x", title: "Personal", description: "I am 22 years old. Single. I am a creative person."},
   {id: 2, icon:"fas fa-briefcase fa-2x", title: "Career", description: "I worked 3 years like IT Infrastruture Analyst/DevOps, and currently I am working 1 year like Software Developer"},
 ]
-console.log(informations.length);
 
 const IndexPage = () => (
   <div>
@@ -25,7 +24,7 @@ const IndexPage = () => (
     <h1>About me</h1>
     <ul className="info-container">
     { informations && informations.map(info => 
-      <li><Info  className="info" key={`info-${info.id}`} {...info} /></li>
+      <li key={`li-${info.id}`}><Info key={`info-${info.id}`} className="info" {...info} /></li>
     )}
     </ul>
     </div>
